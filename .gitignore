@@ -1,0 +1,4 @@
+# SQLite side files; the database itself (database/holoswarm.sqlite) is tracked
+database/*.sqlite-journal
+database/*.sqlite-wal
+database/*.sqlite-shm

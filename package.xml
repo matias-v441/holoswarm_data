@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<?xml-model href="http://download.ros.org/schema/package_format3.xsd" schematypens="http://www.w3.org/2001/XMLSchema"?>
+<package format="3">
+  <name>holoswarm_data</name>
+  <version>1.0.0</version>
+  <description>
+    The holoswarm workspace database (workspaces of mrs_terrain worlds and the
+    mission queues stored with them) and the library that reads and edits it.
+  </description>
+  <maintainer email="buninmatthew@gmail.com">Matvii Bunin</maintainer>
+  <license>MIT</license>
+
+  <buildtool_depend>ament_cmake</buildtool_depend>
+
+  <depend>ament_index_cpp</depend>
+  <depend>libsqlite3-dev</depend>
+  <depend>nlohmann-json-dev</depend>
+
+  <!-- the mrs_terrain dataset (worlds.sqlite, RGB tiles) is installed with heightmap_sampler -->
+  <exec_depend>heightmap_sampler</exec_depend>
+
+  <test_depend>ament_cmake_gtest</test_depend>
+
+  <export>
+    <build_type>ament_cmake</build_type>
+  </export>
+</package>
